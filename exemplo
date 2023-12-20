@@ -1,0 +1,39 @@
+Registro
+
+    -Registrar 
+        -Capturar os dados de registro 
+        - Conferir se eles existen no banco 
+        - Caso nao exista, registrar
+
+    Login
+        -Capturar os dados de Login
+        -Conferir se os dados existem no banco 
+        - Caso exista, logar
+        - Retornar algum id de identificação para as ações dele estarem ligadas ao usuario dele durante o uso do sistema
+    
+    Esqueci minha senha 
+        - Capturar email do usuario 
+        -Enviar senha no email para a recuperação de senha 
+        - Caso a senha inserida for a correta e a validade de tempo estiver nos conformes, mudar senha
+        -Capturar nova senha
+        - Mudar dado da senha no banco
+
+    Gerenciamento de dados escolares 
+        - Capturar dados (id_usuario, nome_da_materia, nota, media)
+        - Autenticar dados 
+        -Caso os dados estejam corretos, deletar conjunto de dados
+
+    Atualizar 
+        - Capturar (id do usuario, id do conjunto de dados, novo_nome_da_materia, nova_nota, nova_media)
+        -Autenticar dados 
+        - Caso os dados estejam corretos, atualizar dados
+    
+    Acessar 
+        -Capturar (id do usuario)
+        - Autenticar dados 
+        - Caso os dados estejam corretos, retornar dados (nome_da_materia, nota, media)
+
+
+Install's 
+
+pip install poetry

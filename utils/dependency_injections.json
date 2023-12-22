@@ -1,0 +1,7 @@
+{
+    "cozinhar_controller": "cozinhar_controller_fogao",
+    "encher_de_agua_controller": "encher_de_agua_controller_pia",
+    "ferver_controller": "ferver_controller_fogao",
+    "macarrao_factory": "macarrao_factory_espaguete",
+    "panela_factory": "panela_factory_media"
+}

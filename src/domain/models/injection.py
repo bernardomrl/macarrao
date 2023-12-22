@@ -1,8 +1,11 @@
 from dataclasses import dataclass
 
-from domain.services.controllers import *
-from domain.services.factories import *
+from domain.services.controllers import CozinharController
+from domain.services.controllers import FerverController
+from domain.services.controllers import EncherDeAguaController
 
+from domain.services.factories import MacarraoFactory
+from domain.services.factories import PanelaFactory
 
 @dataclass
 class Injection:

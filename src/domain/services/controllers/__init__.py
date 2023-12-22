@@ -1,4 +1,3 @@
 from domain.services.controllers.cozinhar_controller import CozinharController
-from domain.services.controllers.ferver_controller import FerverController
 from domain.services.controllers.encher_de_agua_controller import EncherDeAguaController
- 
+from domain.services.controllers.ferver_controller import FerverController

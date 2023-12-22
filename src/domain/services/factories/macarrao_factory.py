@@ -1,4 +1,5 @@
-from domain.models import Macarrao
+from domain.models.macarrao import Macarrao
+
 
 class MacarraoFactory:
     def call(

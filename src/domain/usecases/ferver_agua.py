@@ -1,11 +1,7 @@
-from domain.services.controllers import (
-    EncherDeAguaController,
-    FerverController
-)
-
+from domain.models import Panela
+from domain.services.controllers import EncherDeAguaController, FerverController
 from domain.services.factories import PanelaFactory
 
-from domain.models import Panela
 
 class FerverAgua:
     def __init__(
@@ -20,12 +16,9 @@ class FerverAgua:
 
     def call(self) -> Panela:
         panela = self.panela_factory.call()
-        
+
         panela_com_agua = (
             self.encher_de_agua_controller.encher_panela_com_agua(panela)
         )
 
         return self.ferver_controller.ferver_panela(panela_com_agua)
-
-
-        

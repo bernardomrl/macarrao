@@ -1,8 +1,5 @@
 from dataclasses import dataclass
 
-from domain.services.controllers import *
-from domain.services.factories import *
-
 
 @dataclass
 class DependencyInjection:

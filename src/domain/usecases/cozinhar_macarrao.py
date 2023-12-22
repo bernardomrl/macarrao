@@ -1,14 +1,13 @@
-
+from domain.models import Macarrao, Panela
 from domain.services.controllers import CozinharController
 from domain.services.factories import MacarraoFactory
 
-from domain.models import Macarrao, Panela
 
 class CozinharMacarrao:
     def __init__(
         self,
         macarrao_factory: MacarraoFactory,
-        cozinhar_controller: CozinharController, 
+        cozinhar_controller: CozinharController,
     ):
         self.macarrao_factory = macarrao_factory
         self.cozinhar_controller = cozinhar_controller
@@ -21,8 +20,4 @@ class CozinharMacarrao:
         macarrao = self.macarrao_factory.call(
             quantidade,
         )
-        return self.cozinhar_controller.cozinhar_macarrao(
-            macarrao,
-            panela
-        )
-        
+        return self.cozinhar_controller.cozinhar_macarrao(macarrao, panela)

@@ -1,4 +1,5 @@
-from domain.models import Panela
+from domain.models.panela import Panela
+
 
 class FerverController:
     def ferver_panela(self, panela: Panela) -> Panela:

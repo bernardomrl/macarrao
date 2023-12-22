@@ -1,5 +1,6 @@
-from domain.models import Panela
+from domain.models.panela import Panela
+
 
 class PanelaFactory:
-    def call (self) -> Panela:
+    def call(self) -> Panela:
         raise NotImplementedError()

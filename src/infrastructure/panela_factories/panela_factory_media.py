@@ -4,8 +4,4 @@ from domain.services.factories import PanelaFactory
 
 class PanelaFactoryMedia(PanelaFactory):
     def call(self) -> Panela:
-        return Panela(
-            20,
-            False,
-            False
-        )
+        return Panela(20, False, False)
